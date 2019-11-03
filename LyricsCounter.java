@@ -71,7 +71,7 @@ public class LyricsCounter {
         int wordsCount = 0;
         LinkedList<String> result = new LinkedList<>();
 
-        for (Character firstLetter : wordBegins.keySet()) {
+        for (char firstLetter : wordBegins.keySet()) {
 
             LinkedList<String> words = wordBegins.get(firstLetter);
             int listSize = words.size();
@@ -89,7 +89,7 @@ public class LyricsCounter {
         LinkedList<String> wordsList;
 
         for (String word : getWordsInLyrics()) {
-            Character firstLetter = word.toLowerCase().charAt(0);
+            char firstLetter = word.toLowerCase().charAt(0);
 
             if (result.containsKey(firstLetter)) {
                 wordsList = result.get(firstLetter);

@@ -27,6 +27,7 @@ public class Library {
 
         for (String book : BOOKS)
             result.put(book, 0);
+fdsfsdfsdf
 
         return result;
     }
